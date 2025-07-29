@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohan Prasandh V | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="modern-portfolio.css" />
+</head>
+<body>
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero-content">
+        <div class="hero-text">
+          <span class="greeting">Hello, I’m</span>
+          <h1 class="name">Mohan Prasandh V</h1>
+          <p class="intro">A passionate <span class="highlight">Python Developer</span> crafting modern solutions.</p>
+          <div class="hero-buttons">
+            <a href="resume.pdf" class="btn gradient" download>Download CV</a>
+            <a href="#contact" class="btn outline">Contact Me</a>
+          </div>
+        </div>
+        <div class="hero-img">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Profile" />
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="about" id="about">
+      <h2 class="modern-section-heading">🧑‍💻 About Me</h2>
+      <div class="section-subtitle">Who I am and what I do</div>
+      <div class="about-content">
+        <p>
+          I am a <span class="highlight">Python developer</span> with a passion for <span class="highlight">automation</span>, <span class="highlight">clean code</span>, and <span class="highlight">problem-solving</span>. I love building scalable solutions and learning new technologies.
+        </p>
+        <div class="stats">
+          <div class="stat"><span class="stat-num">10+</span><span class="stat-label">Projects</span></div>
+          <div class="stat"><span class="stat-num">2</span><span class="stat-label">Awards</span></div>
+          <div class="stat"><span class="stat-num">3 yrs</span><span class="stat-label">Experience</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work / Explore Me Section -->
+    <section class="explore" id="explore">
+      <div class="explore-content">
+        <button class="circle-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">✉️</button>
+        <span class="cta-text">Let’s connect and build something <span class="highlight-alt">amazing</span>!</span>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education" id="education">
+      <h2 class="modern-section-heading">🎓 Education</h2>
+      <div class="section-subtitle">My academic background</div>
+      <ul class="timeline">
+        <li><span class="timeline-dot"></span><div><strong>B.Sc. Computer Science</strong> - XYZ University <span class="timeline-year">2022</span></div></li>
+        <li><span class="timeline-dot"></span><div><strong>HSC</strong> - ABC School <span class="timeline-year">2019</span></div></li>
+        <li><span class="timeline-dot"></span><div><strong>SSLC</strong> - DEF School <span class="timeline-year">2017</span></div></li>
+      </ul>
+    </section>
+
+    <!-- Experience, Skills, Expertise Section -->
+    <section class="collapsible-section" id="experience">
+      <h2 class="modern-section-heading">💼 Experience, Skills & Expertise</h2>
+      <div class="section-subtitle">Professional journey and abilities</div>
+      <div class="collapsible-group">
+        <div class="collapsible">
+          <button class="collapsible-header">Experience</button>
+          <div class="collapsible-content">
+            <ul>
+              <li>Python Developer at TechCorp (2022–Present)</li>
+              <li>Intern at DataSoft (2021–2022)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="collapsible">
+          <button class="collapsible-header">Skills</button>
+          <div class="collapsible-content">
+            <ul class="skills-list">
+              <li>Python</li>
+              <li>Django</li>
+              <li>Flask</li>
+              <li>FastAPI</li>
+              <li>SQL</li>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>Git & GitHub</li>
+              <li>Linux</li>
+            </ul>
+          </div>
+        </div>
+        <div class="collapsible">
+          <button class="collapsible-header">Expertise</button>
+          <div class="collapsible-content">
+            <ul>
+              <li>Backend API Development</li>
+              <li>Automation Scripting</li>
+              <li>Database Design</li>
+              <li>RESTful Services</li>
+              <li>CI/CD & DevOps Basics</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer-content">
+      <span>&copy; 2025 Mohan Prasandh V. All rights reserved.</span>
+      <div class="footer-links">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#explore">Explore</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+      </div>
+    </div>
+  </footer>
+  <script src="modern-portfolio.js"></script>
+</body>
+</html>
