@@ -64,6 +64,37 @@
       0% { box-shadow: 0 8px 32px rgba(80,80,200,0.10), 0 0 0 8px #f472b633; }
       100% { box-shadow: 0 8px 32px #818cf855, 0 0 0 12px #facc1533; }
     }
+    /* Add to your style.css for animated subtitle */
+.animated-subtitle {
+  font-family: 'Poppins', 'Inter', Arial, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.04em;
+  color: #5c8df6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2em;
+}
+.subtitle-main {
+  animation: subtitleFadeIn 1.2s cubic-bezier(.4,1.4,.6,1);
+}
+.subtitle-vibe {
+  color: #a78bfa;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  animation: vibeSlideIn 1.2s 0.8s cubic-bezier(.4,1.4,.6,1) backwards;
+}
+@keyframes subtitleFadeIn {
+  from { opacity: 0; transform: translateY(18px) scale(0.96);}
+  to { opacity: 1; transform: none;}
+}
+@keyframes vibeSlideIn {
+  from { opacity: 0; transform: translateX(-24px) scale(0.96);}
+  to { opacity: 1; transform: none;}
+}
   </style>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -83,7 +114,10 @@
           <div class="profile-particles"></div>
         </div>
         <h1 class="profile-heading">Hi, I'm Mohan Prasandh <span class="wave">👋</span></h1>
-        <p class="subtitle">Python Developer</p>
+        <p class="subtitle animated-subtitle">
+  <span class="subtitle-main">WORDPRESS & PYTHON DEVELOPER</span>
+  <span class="subtitle-vibe">| VibeCoder</span>
+</p>
         <p class="intro">Passionate about building robust backend systems and automating workflows with Python. Welcome to my digital space!</p>
       </div>
       <div class="socials">
@@ -99,7 +133,7 @@
       <a href="#skills" class="nav-link">Skills</a>
       <a href="#projects" class="nav-link">Projects</a>
       <a href="#contact" class="nav-link">Contact</a>
-      <a href="resume.pdf" download class="nav-link resume-btn">Download Resume</a>
+      <a href="MOHANPRASANDH_RESUME.pdf" download class="nav-link resume-btn">Download Resume</a>
     </header>
 
     <!-- About Me Section -->
@@ -202,7 +236,7 @@
         </div>
         <div class="contact-item fade-in-up" style="animation-delay:0.3s">
           <span class="contact-icon linkedin-gradient">🔗</span>
-          <a href="https://linkedin.com/in/mohan-prasandh-182484292" class="contact-link" target="_blank">linkedin.com/in/mohan-prasandh-182484292</a>
+          <a href="https://linkedin.com/in/mohan-prasandh-v-182484292" class="contact-link" target="_blank">linkedin.com/in/mohan-prasandh-v-182484292</a>
         </div>
         <div class="contact-item fade-in-up" style="animation-delay:0.5s">
           <span class="contact-icon phone-gradient">📱</span>
